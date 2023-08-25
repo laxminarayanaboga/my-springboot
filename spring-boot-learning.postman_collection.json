@@ -15,13 +15,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/actuator/health",
+							"raw": "http://localhost:8080/abcd/actuator/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"abcd",
 								"actuator",
 								"health"
 							]
@@ -50,13 +51,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/actuator/info",
+							"raw": "http://localhost:8080/abcd/actuator/info",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"abcd",
 								"actuator",
 								"info"
 							]
@@ -85,13 +87,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/actuator/mappings",
+							"raw": "http://localhost:8080/abcd/actuator/mappings",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"abcd",
 								"actuator",
 								"mappings"
 							]
@@ -120,13 +123,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/actuator/threaddump",
+							"raw": "http://localhost:8080/abcd/actuator/threaddump",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"abcd",
 								"actuator",
 								"threaddump"
 							]
@@ -163,11 +167,84 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8080",
+					"raw": "localhost:8080/abcd",
 					"host": [
 						"localhost"
 					],
-					"port": "8080"
+					"port": "8080",
+					"path": [
+						"abcd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teamInfo",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/abcd/teamInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"abcd",
+						"teamInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dailyworkout",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/abcd/dailyworkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"abcd",
+						"dailyworkout"
+					]
 				}
 			},
 			"response": []
