@@ -11,6 +11,12 @@ public class FunRestController {
     @Value("${demo.name}")
     private String demoName;
 
+    @Value("${team.name}")
+    private String teamName;
+
+    @Value("${coach.name}")
+    private String coachName;
+
     @GetMapping("/")
     public String sayHello() {
         return "Hello World! say.. " + demoName;
@@ -19,5 +25,10 @@ public class FunRestController {
     @GetMapping("/getExample1")
     public String getExample1() {
         return "This is getExample1";
+    }
+
+    @GetMapping("/teamInfo")
+    public String teamInfo() {
+        return "coachName: " + coachName + ", teamName: " + teamName;
     }
 }
