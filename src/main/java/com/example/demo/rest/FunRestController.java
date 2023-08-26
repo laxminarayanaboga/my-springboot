@@ -1,6 +1,8 @@
 package com.example.demo.rest;
 
 
+import com.example.demo.common.Coach;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,4 +33,5 @@ public class FunRestController {
     public String teamInfo() {
         return "coachName: " + coachName + ", teamName: " + teamName;
     }
+
 }
