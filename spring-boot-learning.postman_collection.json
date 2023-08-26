@@ -141,6 +141,118 @@
 			]
 		},
 		{
+			"name": "jsonPlaceHolder",
+			"item": [
+				{
+					"name": "jsonplaceholder-users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "jsonplaceholder.typicode.com/users",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "getStudents",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/abcd/api/students",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"abcd",
+								"api",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStudent",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/abcd/api/student/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"abcd",
+								"api",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "localhost:8080",
 			"request": {
 				"auth": {
