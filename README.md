@@ -22,3 +22,7 @@ The following guides illustrate how to use some features concretely:
 ## Run from Command Line
 * Option 1 - mvn spring-boot:run
 * 
+
+## Notes:
+* root db password: P@$$W0rd
+* db username: springstudent, password: springstudent
