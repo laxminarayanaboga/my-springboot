@@ -249,6 +249,90 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "getStudent-notFound",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/abcd/api/student/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"abcd",
+								"api",
+								"student",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStudent-exception",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/abcd/api/student/asdf",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"abcd",
+								"api",
+								"student",
+								"asdf"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
